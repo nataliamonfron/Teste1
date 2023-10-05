@@ -18,5 +18,9 @@ class MenuActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
+
+        binding.buttonCalculadora.setOnClickListener{
+            startActivity(Intent(this, CalculadoraActivity::class.java))
+        }
     }
 }

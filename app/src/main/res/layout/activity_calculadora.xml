@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".CalculadoraActivity">
+
+    <TextView
+        android:id="@+id/text_expressao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Expressão"
+        android:inputType="none"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Resultado"
+        android:inputType="none"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_marginBottom="16dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:onClick="onNumberClick"
+            android:id="@+id/button_1"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2"
+            android:onClick="onNumberClick"
+            android:id="@+id/button_2"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="3"
+            android:onClick="onNumberClick"
+            android:id="@+id/button_3"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:onClick="onOperatorClick"
+            android:id="@+id/button_somar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4"
+            android:onClick="onNumberClick"
+            android:id="@+id/button_4"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="5"
+            android:onClick="onNumberClick"
+            android:id="@+id/button_5"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="6"
+            android:onClick="onNumberClick"
+            android:id="@+id/button_6"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:onClick="onOperatorClick"
+            android:id="@+id/button_subtrair"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="7"
+            android:onClick="onNumberClick"
+            android:id="@+id/button_7"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="8"
+            android:onClick="onNumberClick"
+            android:id="@+id/button_8"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="9"
+            android:onClick="onNumberClick"
+            android:id="@+id/button_9"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="*"
+            android:onClick="onOperatorClick"
+            android:id="@+id/button_multiplicar"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:onClick="onNumberClick"
+            android:id="@+id/button_0"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="C"
+            android:onClick="onClearClick"
+            android:id="@+id/button_limpar"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="="
+            android:onClick="onCalculateClick"
+            android:id="@+id/button_igual"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="/"
+            android:onClick="onOperatorClick"
+            android:id="@+id/button_dividir"/>
+
+    </LinearLayout>
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/button_voltarCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Voltar para o menu"
+        />
+</LinearLayout>
+
+
+</LinearLayout>
